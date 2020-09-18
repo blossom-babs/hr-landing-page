@@ -1,5 +1,7 @@
 // CORE
-    @import './core/overwrite';
-    @import './core/typography';
-    @import './core/variable';
+@import './core/overwrite';
+@import './core/typography';
+@import './core/variable';
     
+    // SECTIONS
+@import './sections/header';
