@@ -15,8 +15,8 @@ clipPath: `polygon(50% 0%,
 
     }
     return(
-        <header className="header">
-            <img className="header__image" style={bgStyle} src={`${HeaderImage}`} alt=""/>
+        <header src={`${HeaderImage}`} className="header">
+            <img className="header__image" style={bgStyle}  alt=""/>
         </header>
     )
 }
