@@ -1,12 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+
+  list-style-type: none;
 }
 
-html,body{
-    overflow-x: hidden;
-    position: fixed; // https://stackoverflow.com/a/18076377
-
-}
+// html,
+// body {
+//  overflow-x: hidden;
+//  width: 100%;
+//  height: 100%;
+// }

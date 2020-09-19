@@ -11,24 +11,29 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Header() {
-  const backgroundStyle = {
-    backgroundImage: `url(${HeaderImage})`,
+  const bgStyle = {
+    background: `linear-gradient(black, rgba(0, 0, 0, 0.5)), url(${HeaderImage})`
   };
 
-  // className="header"
   return (
-    <header >
-      <div style={backgroundStyle} className="header"></div>
+    <div className="header" style={bgStyle}>
       <Nav />
-      <div className="grid">
+      <div className="grid template-col-one">
         <div className="icons">
           <FacebookIcon className="icon" />
           <InstagramIcon className="icon" />
           <TwitterIcon className="icon" />
           <LinkedInIcon className="icon" />
         </div>
+        <div className="text">
+          <p>
+            We know that you are busy with deadlines and customer demands and
+            this consumes all your time and as your business expands.
+          </p>
+          <h1>We are HR Experts we can help</h1>
+        </div>
       </div>
-    </header>
+    </div>
   );
 }
 

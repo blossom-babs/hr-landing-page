@@ -1,28 +1,64 @@
 .header {
-  width: 1476px;
-  height: 780px;
+ // background: black;
+  color: $neutral-white;
 
+  /* Set a specific height */
+  width: 100%;
+  height: 600px;
+
+  /* Position and center the image to scale nicely on all screens */
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
 
-  @media screen and (max-width:400px){
-    height: 100%;
+  clip-path: circle(77% at 52% 1%);
+
+  @media screen and(max-width:500px){
+    height: 800px;
+    clip-path: circle(73.9% at 52% 5%);
   }
 
+  .grid{
+    padding-top: 11rem;
+  }
+
+  .text {
+    text-align: center;
+    padding-right: 4rem;
+    width: 70vw;
+  
+    @media screen and (min-width: 768px) {
+      padding-right: 6rem;
+    }
+    @media screen and (min-width: 1024px) {
+      padding-right: 10rem;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-right: 25rem;
+    }
+    p {
+      line-height: 30px;
+      font-size: small;
+     
+    }
+    h1 {
+      padding: 1rem 0;
+      font-weight: bold;
+      line-height: 40px;
+    }
+  }
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: column;
   color: $neutral-white;
 
   padding-left: 2rem;
   padding-top: 1rem;
-  
 
-  .icon{
+  .icon {
     font-size: small;
     margin-bottom: 1rem;
   }
-  
 }
