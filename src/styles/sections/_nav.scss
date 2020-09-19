@@ -1,16 +1,53 @@
 .nav {
-  margin: 5rem 10%;
   color: $neutral-white;
-
-  &__span{
-      font-weight: 20;
-  }
+  margin: 2rem 5%;
 
   &__links {
-    width: 40rem;
+    list-style-type: none;
+
+    @media screen and (max-width: 700px) {
+      position: absolute;
+      right: 0;
+      height: 80vh;
+      top: 4rem;
+      width: 50vw;
+      background: $light-black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      //background-color: $neutral-white;
+    }
+
+    li {
+      padding-left: 1rem;
+      font-size: 0.7rem;
+
+      @media screen and (max-width:700px){
+        opacity: 0;
+      }
+    }
   }
 
-  &__link {
-    font-size: 17px;
+  &__icon{
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width:700px){
+      display: block;
+    }
+  }
+
+  
+}
+
+.nav__active{
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 700px){
+  body{
+    overflow-x: hidden;
   }
 }

@@ -4,3 +4,9 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+html,body{
+    overflow-x: hidden;
+    position: fixed; // https://stackoverflow.com/a/18076377
+
+}

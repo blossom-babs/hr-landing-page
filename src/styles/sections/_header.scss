@@ -1,7 +1,28 @@
 .header {
-  //width: 1476px;
-  height: 774px;
+  width: 1476px;
+  height: 780px;
+
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media screen and (max-width:400px){
+    height: 100%;
+  }
+
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  color: $neutral-white;
+
+  padding-left: 2rem;
+  padding-top: 1rem;
+  
+
+  .icon{
+    font-size: small;
+    margin-bottom: 1rem;
+  }
+  
 }

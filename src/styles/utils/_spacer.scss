@@ -9,3 +9,11 @@
 .space-around{
     justify-content: space-around;
 }
+
+.grid{
+    display: grid;
+}
+
+.template-col-one{
+    grid-template-columns: repeat(2, 1fr);
+}
