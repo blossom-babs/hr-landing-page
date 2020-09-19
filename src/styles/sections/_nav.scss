@@ -1,0 +1,16 @@
+.nav {
+  margin: 5rem 10%;
+  color: $neutral-white;
+
+  &__span{
+      font-weight: 20;
+  }
+
+  &__links {
+    width: 40rem;
+  }
+
+  &__link {
+    font-size: 17px;
+  }
+}
