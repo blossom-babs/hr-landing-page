@@ -1,0 +1,91 @@
+.packages {
+  margin: 1rem 5%;
+
+  @media screen and (min-width: 800px) {
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    position: relative;
+    top: -13rem;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 599px) {
+    position: relative;
+    top: -5rem;
+  }
+
+  &__flex-cards{
+   
+    @media screen and (min-width: 900px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    @media screen and (max-width: 900px) {
+      margin-left: auto;
+    }
+
+
+  }
+}
+
+// package cards
+.package-cards {
+  border-radius: 15px;
+  width: 90%;
+
+  -webkit-box-shadow: 0px 10px 6px -8px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 10px 6px -8px rgba(201, 201, 201, 1);
+  box-shadow: 0px 10px 6px -8px rgba(201, 201, 201, 1);
+
+  margin-bottom: 2rem;
+
+  @media screen and(min-width:900px){
+    width: 30%;
+  }
+
+  &__img {
+    img {
+      height: 200px;
+      object-position: center;
+      border-radius: 15px;
+
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      object-fit: cover;
+
+      @media screen and(min-width:750px){
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    &--title{
+        font-weight: 600;
+        color: #565656;
+    }
+
+    &--price{
+        margin: 1rem 0;
+        color: $deep-red;
+        font-weight: 700;
+    }
+
+    &--items{
+        color: #888888;
+    }
+  }
+
+}

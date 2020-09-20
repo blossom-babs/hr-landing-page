@@ -20,18 +20,22 @@
   }
 
   &__links {
+    cursor: pointer;
     li {
       padding-right: 2rem;
+      &:hover{
+        color: $deep-red;
+      }
       @media screen and(max-width: 750px) {
         display: none;
       }
     }
+  
   }
 
   &__icon {
     display: none;
     padding-top: 1rem;
-    cursor: pointer;
 
     @media screen and (max-width: 750px) {
       display: block;
@@ -50,6 +54,11 @@
     justify-content: center;
     transition: 0.5s ease-in;
     display: none;
+
+    @media screen and (max-width: 500px) {
+      background: red;
+      padding-left: 4rem;
+    }
 
     &--links {
       li {

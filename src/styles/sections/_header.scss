@@ -13,6 +13,10 @@
 
   clip-path: circle(77% at 52% 1%);
 
+  @media screen and (min-width: 1000px) {
+    clip-path: circle(80% at 50% 5%);
+  }
+
   @media screen and(max-width:500px){
     height: 800px;
     clip-path: circle(73.9% at 52% 5%);
@@ -20,18 +24,22 @@
 
   .grid{
     padding-top: 11rem;
+
+    // @media screen and(max-width:500px){
+    //  padding-top: 5rem;
+    // }
   }
 
   .text {
     text-align: center;
     padding-right: 4rem;
     width: 70vw;
-  
+
     @media screen and (min-width: 768px) {
-      padding-right: 6rem;
+      padding-right: 10rem;
     }
     @media screen and (min-width: 1024px) {
-      padding-right: 10rem;
+      padding-right: 15rem;
     }
     @media screen and (min-width: 1440px) {
       padding-right: 25rem;
@@ -39,6 +47,10 @@
     p {
       line-height: 30px;
       font-size: small;
+
+      @media screen and (max-width: 600px) and (min-width: 501px) {
+        display: none;
+      }
      
     }
     h1 {
@@ -57,8 +69,14 @@
   padding-left: 2rem;
   padding-top: 1rem;
 
+
   .icon {
     font-size: small;
     margin-bottom: 1rem;
+    cursor: pointer;
+
+    &:hover{
+      color: $deep-red;
+    }
   }
 }
