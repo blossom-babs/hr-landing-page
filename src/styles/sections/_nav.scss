@@ -5,6 +5,7 @@
   height: 100px;
   align-items: center;
 
+
   @media screen and(max-width: 500px) {
     padding-top: 5rem;
   }
@@ -21,8 +22,14 @@
 
   &__links {
     cursor: pointer;
+
+    @media screen and(max-width:768px) {
+    margin-top: 3rem;
+  }
+   
     li {
       padding-right: 2rem;
+
       &:hover{
         color: $deep-red;
       }
@@ -36,6 +43,10 @@
   &__icon {
     display: none;
     padding-top: 1rem;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 1rem;
+    }
 
     @media screen and (max-width: 750px) {
       display: block;

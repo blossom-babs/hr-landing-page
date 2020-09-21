@@ -5,6 +5,9 @@ import "./styles/styles.scss";
 import Header from "./components/Header";
 import About from "./components/About";
 import Packages from "./components/Packages";
+import Offer from "./components/Offer";
+import News from "./components/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
      <Header />
      <About/>
      <Packages/>
+     <Offer />
+     <News/>
+     <Footer/>
     </div>
   );
 }

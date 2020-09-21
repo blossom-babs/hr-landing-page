@@ -1,0 +1,80 @@
+.offer {
+  width: 100%;
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+  padding: 3rem 5%;
+
+  color: $neutral-white;
+
+  @media screen and (max-width: 500px) {
+    position: relative;
+    top: -10rem;
+  }
+
+  @media screen and (max-width: 320px) {
+   width: 400px;
+  }
+
+  &__heading {
+    padding-bottom: 2rem;
+  }
+
+  &__desc {
+    padding-bottom: 2rem;
+  }
+}
+
+// offer box
+
+.offer-box {
+  border-radius: 6px;
+  background: rgba(239, 6, 51, 0.7);
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+
+  @media screen and (min-width:800px){
+     margin-right: 1rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 2rem 0;
+  }
+
+  &__main{
+      font-weight: bold;
+      line-height: 25px;
+  }
+
+  &__content{
+      line-height: 25px;
+      padding-bottom: 2rem;
+  }
+}
+
+// the second grid
+.grid--two {
+  @media screen and(max-width:800px) {
+    display: none;
+  }
+  @media screen and(min-width:900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// the first grid
+.grid--one{
+    @media screen and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

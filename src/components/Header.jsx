@@ -1,14 +1,9 @@
 // eslint-disable-next-line
 
 import React from "react";
-// import images
 import HeaderImage from "../assets/header_img.png";
-// import Nav component
 import Nav from "./Nav";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Social from "./Social";
 
 function Header() {
   const bgStyle = {
@@ -19,12 +14,7 @@ function Header() {
     <div className="header" style={bgStyle}>
       <Nav />
       <div className="grid template-col-one">
-        <div className="icons">
-          <FacebookIcon className="icon" />
-          <InstagramIcon className="icon" />
-          <TwitterIcon className="icon" />
-          <LinkedInIcon className="icon" />
-        </div>
+       <Social holder="icons" item="icon"/>
         <div className="text">
           <p>
             We know that you are busy with deadlines and customer demands and
