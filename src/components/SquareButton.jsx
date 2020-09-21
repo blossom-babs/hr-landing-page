@@ -1,7 +1,7 @@
 import React from "react";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
-function SquareButton({content}) {
+function SquareButton({ content, move }) {
   return (
     <div>
       <a href="/" className="square-button">

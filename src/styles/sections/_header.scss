@@ -1,5 +1,5 @@
 .header {
- // background: black;
+  // background: black;
   color: $neutral-white;
 
   /* Set a specific height */
@@ -11,28 +11,23 @@
   background-size: contain;
   position: relative;
 
-  //clip-path: circle(77% at 52% 1%);
+  //height: 50%;
+  clip-path: ellipse(77% 61% at 50% 39%);
+  /* Position and center the image to scale nicely on all screens */
+  //  background-position: center;
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //  position: relative;
+// @media screen and(max-width:500px) {
+//   height: 800px;
+//   clip-path: circle(73.9% at 52% 5%);
+// }
 
-  @media screen and (min-width: 1000px) {
-    //clip-path: circle(80% at 50% 5%);
-  }
-
-  @media screen and(max-width:500px){
-    height: 800px;
-    clip-path: circle(73.9% at 52% 5%);
-  }
-
-  @media screen and(max-width:425px){
-    height: 1000px;
-    clip-path: circle(73.9% at 52% 5%);
-  }
-
-  @media screen and(max-width:320px){
-  width: 450px;
-  height: 1200px;
-  }
-
-  .grid{
+// @media screen and(max-width:425px) {
+//   height: 1000px;
+//   clip-path: circle(73.9% at 52% 5%);
+// }
+  .grid {
     padding-top: 11rem;
 
     // @media screen and(max-width:500px){
@@ -48,12 +43,15 @@
     @media screen and (min-width: 768px) {
       padding-right: 10rem;
     }
+
     @media screen and (min-width: 1024px) {
       padding-right: 15rem;
     }
+
     @media screen and (min-width: 1440px) {
       padding-right: 25rem;
     }
+
     p {
       line-height: 30px;
       font-size: small;
@@ -61,8 +59,9 @@
       @media screen and (max-width: 600px) and (min-width: 501px) {
         display: none;
       }
-     
+
     }
+
     h1 {
       padding: 1rem 0;
       font-weight: bold;
@@ -85,7 +84,7 @@
     margin-bottom: 1rem;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       color: $deep-red;
     }
   }

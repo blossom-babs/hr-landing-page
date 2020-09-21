@@ -4,8 +4,10 @@ import ContentBox from "./ContentBox";
 // import image
 import Office from "../assets/desc_img.png";
 import SquareButton from "./SquareButton";
+import AOS from "aos";
 
 function About() {
+  AOS.init();
   return (
     <section className="about">
       <h1 className="about__title sub--headings">Who we are</h1>
@@ -26,8 +28,8 @@ function About() {
               for direction among others become more evitable.
             </p>
           </div>
-          <div className="flex">
-            <div className="flex-col-one">
+          <div className="about__flex">
+            <div className="about__flex-col-one">
               <ContentBox
                 title="Our Mission:"
                 content="
@@ -36,7 +38,7 @@ function About() {
               "
               />
             </div>
-            <div className="flex-col-two">
+            <div className="about__flex-col-two">
               <ContentBox
                 title="Our Vision:"
                 content="
@@ -46,13 +48,18 @@ function About() {
             </div>
           </div>
 
-          <div className="image-section">
+          <div className="about__image-section">
             <SquareButton content="Discover more" />
           </div>
         </div>
         <div className="grid-col-two">
           <div className="about__img">
-            <img src={`${Office}`} alt="office-seting" />
+            <img
+              data-aos="fade-right"
+              data-aos-delay="50"
+              src={`${Office}`}
+              alt="office-seting"
+            />
           </div>
         </div>
       </div>

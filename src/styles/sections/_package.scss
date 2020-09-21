@@ -1,13 +1,9 @@
 .packages {
-  margin: 1rem 5%;
 
-
-  @media screen and(max-width:320px){
-    margin: 0 3rem;
-  }
+  padding: 3rem;
 
   @media screen and (min-width: 800px) {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   @media screen and (min-width: 1200px) {
@@ -20,20 +16,22 @@
   }
 
   @media screen and (max-width: 768px) {
-  margin-top: 7rem;
+    position: relative;
+    top: -2rem;
   }
 
   @media screen and (max-width: 425px) {
-    margin-top: 20rem;
-    }
+    position: relative;
+    top: -20rem;
+  }
 
   @media screen and (min-width: 501px) and (max-width: 599px) {
     position: relative;
     top: -5rem;
   }
 
-  &__flex-cards{
-   
+  &__flex-cards {
+
     @media screen and (min-width: 900px) {
       display: flex;
       flex-wrap: wrap;
@@ -41,25 +39,18 @@
     }
   }
 
-  &__cta{
+  &__cta {
     display: flex;
     justify-content: center;
-    margin: 3rem 0 5rem 0;
 
-    @media screen and (max-width: 900px) {
-      margin-left: auto;
-    }
 
-    @media screen and (max-width: 750px) {
-      margin: 3rem 0 1rem 0;
-    }
   }
 }
 
 // package cards
 .package-cards {
   border-radius: 15px;
-  width: 90%;
+  // width: 90%;
 
   -webkit-box-shadow: 0px 10px 6px -8px rgba(201, 201, 201, 1);
   -moz-box-shadow: 0px 10px 6px -8px rgba(201, 201, 201, 1);
@@ -67,7 +58,7 @@
 
   margin-bottom: 2rem;
 
-  @media screen and(min-width:900px){
+  @media screen and(min-width:900px) {
     width: 30%;
   }
 
@@ -82,7 +73,15 @@
 
       object-fit: cover;
 
-      @media screen and(min-width:750px){
+      @media screen and(min-width:750px) {
+        width: 100%;
+      }
+
+      @media screen and(max-width:425px) {
+        width: 100%;
+      }
+
+      @media screen and (min-width:500px) and (max-width: 750px) {
         width: 100%;
       }
     }
@@ -91,19 +90,23 @@
   &__content {
     text-align: center;
 
-    &--title{
-        font-weight: 600;
-        color: #565656;
+    &--title {
+      font-weight: 600;
+      color: #565656;
     }
 
-    &--price{
-        margin: 1rem 0;
-        color: $deep-red;
-        font-weight: 700;
+    &--price {
+      // margin: 1rem 0;
+      color: $deep-red;
+      font-weight: 700;
+
+      @media screen and (max-width: 320px) {
+        padding: 1rem 0;
+      }
     }
 
-    &--items{
-        color: #888888;
+    &--items {
+      color: #888888;
     }
   }
 

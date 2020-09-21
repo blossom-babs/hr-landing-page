@@ -23,21 +23,22 @@
   &__links {
     cursor: pointer;
 
-    @media screen and(max-width:768px) {
-    margin-top: 3rem;
-  }
-   
+    @media screen and(max-width:1024px) {
+      margin-top: 3rem;
+    }
+
     li {
       padding-right: 2rem;
 
-      &:hover{
+      &:hover {
         color: $deep-red;
       }
+
       @media screen and(max-width: 750px) {
         display: none;
       }
     }
-  
+
   }
 
   &__icon {
@@ -57,23 +58,34 @@
     position: absolute;
     top: 7rem;
     background: $deep-red;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     left: 0;
+    justify-content: center;
     align-items: center;
     display: flex;
-    justify-content: center;
     transition: 0.5s ease-in;
     display: none;
+    padding: 5rem;
+    transition: all 300ms ease-in-out;
+    transform: translateX(1000px);
+
+    &--in {
+      transform: translateX(0px);
+    }
+
+    &--out {
+      transform: translateX(1000px);
+    }
 
     @media screen and (max-width: 500px) {
-      background: red;
+      background: $deep-red;
       padding-left: 4rem;
     }
 
     &--links {
       li {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
         font-size: 1.5rem;
         cursor: pointer;
 
