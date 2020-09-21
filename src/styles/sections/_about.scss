@@ -6,6 +6,12 @@
     top: -20rem;
   }
 
+  @media screen and(max-width: 414px) and(min-width: 320px) {
+    position: relative;
+    top: 5rem;
+
+  }
+
   padding: 3rem;
 
   &__content {

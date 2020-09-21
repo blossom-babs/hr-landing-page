@@ -32,7 +32,6 @@ function Nav() {
         {toggle ? <MenuIcon /> : <CloseIcon />}
       </div>
       <div
-        // style={{ display: toggle ? "block" : "none" }}
         className={`nav__mobile ${
           toggle ? "nav__mobile--out" : "nav__mobile--in"
         }`}

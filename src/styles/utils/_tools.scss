@@ -16,8 +16,6 @@
     background: $neutral-white;
   }
 
-
-
 }
 
 .arrow-icon {
@@ -45,15 +43,12 @@
 }
 
 .round-edge-buttton {
-  border-radius: 26px;
+  border-radius: 0 26px 26px 0;
   cursor: pointer;
   color: #ffffff;
   width: 40vw;
   padding: 10px 20px;
   text-decoration: none;
-
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 
   position: relative;
   bottom: 9rem;

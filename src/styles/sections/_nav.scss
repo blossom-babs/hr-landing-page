@@ -61,31 +61,23 @@
     height: 100%;
     width: 100%;
     left: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     transition: 0.5s ease-in;
-    display: none;
     padding: 5rem;
     transition: all 300ms ease-in-out;
-    transform: translateX(1000px);
+    transform: translateX(0px);
+    z-index: 1;
 
     &--in {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
 
     &--out {
       transform: translateX(1000px);
     }
 
-    @media screen and (max-width: 500px) {
-      background: $deep-red;
-      padding-left: 4rem;
-    }
-
     &--links {
       li {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         font-size: 1.5rem;
         cursor: pointer;
 
