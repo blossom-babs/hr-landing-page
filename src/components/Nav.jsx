@@ -29,11 +29,11 @@ function Nav() {
         <li>Contact</li>
       </ul>
       <div onClick={handleClick} className="nav__icon">
-        {toggle ? <MenuIcon /> : <CloseIcon />}
+        {toggle ? <CloseIcon /> : <MenuIcon />}
       </div>
       <div
         className={`nav__mobile ${
-          toggle ? "nav__mobile--out" : "nav__mobile--in"
+          toggle ? "nav__mobile--in" : "nav__mobile--out"
         }`}
       >
         <ul className="nav__mobile--links">

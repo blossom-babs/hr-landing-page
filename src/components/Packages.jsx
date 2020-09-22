@@ -21,7 +21,12 @@ function Packages() {
       <div className="packages__divider sub--divider" />
       <div className="packages__flex-cards">
         <PackageCard style={blueColor} />
-        <PackageCard style={redColor} />
+        <PackageCard
+          data_aos="fade-up-right"
+          data_aos_delay="750"
+          data_aos_duration="1200"
+          style={redColor}
+        />
         <PackageCard style={greenColor} />
       </div>
       <div className="packages__cta">

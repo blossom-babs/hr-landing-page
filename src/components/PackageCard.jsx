@@ -1,13 +1,25 @@
 import React from "react";
 import PackageImage from "../assets/packages_img.png";
 
-function PackageCard(props) {
+function PackageCard({
+  style,
+  data_aos,
+  data_aos_delay,
+  data_aos_duration,
+  data_aos_easing,
+}) {
   return (
-    <div className="package-cards">
+    <div
+      data-aos={data_aos}
+      data-aos-delay={data_aos_delay}
+      data-aos-duration={data_aos_duration}
+      data-aos-easing={data_aos_easing}
+      className="package-cards"
+    >
       <div className="package-cards__img">
         <div className="the--img">
           <img src={`${PackageImage}`} alt="" />
-          <div style={props.style} className="round-edge-buttton">
+          <div style={style} className="round-edge-buttton">
             Retainership Category
           </div>
         </div>

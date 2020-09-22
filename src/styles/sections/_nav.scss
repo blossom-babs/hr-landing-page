@@ -1,30 +1,19 @@
 .nav {
-  color: $neutral-white;
-  margin: 0 5%;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 2rem;
   height: 100px;
   align-items: center;
 
-
-  @media screen and(max-width: 500px) {
-    padding-top: 5rem;
-  }
-
-  &__company-logo {
-    padding-right: 1rem;
-  }
-
   &__company-tagline {
-    @media screen and(max-width: 750px) {
-      display: none;
-    }
+    padding-left: 1rem;
   }
 
   &__links {
     cursor: pointer;
 
-    @media screen and(max-width:1024px) {
-      margin-top: 3rem;
+    @media screen and(min-width:768px) {
+      padding-top: 3rem;
     }
 
     li {
@@ -34,7 +23,7 @@
         color: $deep-red;
       }
 
-      @media screen and(max-width: 750px) {
+      @media screen and(max-width: 768px) {
         display: none;
       }
     }
@@ -45,11 +34,7 @@
     display: none;
     padding-top: 1rem;
 
-    @media screen and (max-width: 425px) {
-      margin-bottom: 1rem;
-    }
-
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       display: block;
     }
   }
@@ -58,14 +43,19 @@
     position: absolute;
     top: 7rem;
     background: $deep-red;
-    height: 100%;
     width: 100%;
     left: 0;
     transition: 0.5s ease-in;
-    padding: 5rem;
-    transition: all 1500ms ease-in-out;
+    padding: 3rem 5rem 5rem;
+    transition: all 1000ms ease-in-out;
     transform: translateX(0px);
-    z-index: 1;
+
+    clip-path: ellipse(77% 61% at 50% 39%);
+
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 
     &--in {
       transform: translateX(0);
@@ -77,8 +67,8 @@
 
     &--links {
       li {
-        padding-bottom: 2rem;
-        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
         cursor: pointer;
 
         &:hover {
