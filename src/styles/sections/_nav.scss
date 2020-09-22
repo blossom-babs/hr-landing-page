@@ -45,10 +45,11 @@
     background: $deep-red;
     width: 100%;
     left: 0;
-    transition: 0.5s ease-in;
+    transition: all 1s linear;
     padding: 3rem 5rem 5rem;
-    transition: all 1000ms ease-in-out;
+
     transform: translateX(0px);
+
 
     clip-path: ellipse(77% 61% at 50% 39%);
 
@@ -58,11 +59,15 @@
     }
 
     &--in {
-      transform: translateX(0);
+
+      transform: translatY(0);
+      // display: block;
     }
 
     &--out {
-      transform: translateX(1000px);
+      transform: translateY(-1000px);
+      // display: none;
+
     }
 
     &--links {
