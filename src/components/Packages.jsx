@@ -24,7 +24,7 @@ function Packages() {
         <PackageCard
           data_aos="fade-up-right"
           data_aos_delay="750"
-          data_aos_duration="1200"
+          data_aos_duration="1000"
           style={redColor}
         />
         <PackageCard style={greenColor} />

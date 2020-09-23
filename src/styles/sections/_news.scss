@@ -1,10 +1,6 @@
 .news {
-  margin: 3rem 5%;
 
-  @media screen and (max-width: 425px) {
-    position: relative;
-    top: -20rem;
-  }
+  padding: 3rem 5%;
 
   &__highlight {
     background: rgba(242, 242, 242, 0.3);

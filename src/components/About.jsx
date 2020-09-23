@@ -1,7 +1,5 @@
 import React from "react";
-// import components
 import ContentBox from "./ContentBox";
-// import image
 import Office from "../assets/desc_img.png";
 import SquareButton from "./SquareButton";
 
@@ -51,7 +49,12 @@ function About() {
           </div>
         </div>
         <div className="grid-col-two">
-          <div className="about__img">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            className="about__img"
+          >
             <img src={`${Office}`} alt="office-seting" />
           </div>
         </div>

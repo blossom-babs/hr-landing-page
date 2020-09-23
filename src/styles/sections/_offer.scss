@@ -5,21 +5,10 @@
   /* Position and center the image to scale nicely on all screens */
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
-
-  padding: 3rem 5%;
+  //position: relative;
+  padding: 3rem;
 
   color: $neutral-white;
-
-  @media screen and (max-width: 500px) {
-    position: relative;
-    top: -10rem;
-  }
-
-  @media screen and (max-width: 425px) {
-    position: relative;
-    top: -20rem;
-  }
 
   &__heading {
     padding-bottom: 2rem;
